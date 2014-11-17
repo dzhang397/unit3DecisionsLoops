@@ -1,4 +1,4 @@
-Introduction
+﻿Introduction
 
 The goal of this lab is to apply your understanding of decision and loop
 	structures to implement a complex algorithm within the context of an
@@ -30,6 +30,10 @@ The universe of the Game of Life is an infinite two-dimensional orthogonal
 	moment at which this happens is sometimes called a tick (in other words,
 	each generation is a pure function of the preceding one). The rules
 	continue to be applied repeatedly to create further generations.
+* Prompt the user for the number of generations to simulate
+* Create a BoundedGrid large enough to contain all possible daughter generations of the parent generation
+* Indicate live cells with a Rock Actor
+* Simulate the indicated number of generations with a 50 millisecond wait time between generations
 
 
 Nonfunctional Requirements:

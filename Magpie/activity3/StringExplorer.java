@@ -7,21 +7,25 @@
 public class StringExplorer
 {
 
-	public static void main(String[] args)
-	{
-		String sample = "The quick brown fox jumped over the lazy dog.";
-		
-		//  Demonstrate the indexOf method.
-		int position = sample.indexOf("quick");
-		System.out.println ("sample.indexOf(\"quick\") = " + position);
-		
-		//  Demonstrate the toLowerCase method.
-		String lowerCase = sample.toLowerCase();
-		System.out.println ("sample.toLowerCase() = " + lowerCase);
-		System.out.println ("After toLowerCase(), sample = " + sample);
-		
-		//  Try other methods here:
+    public static void main(String[] args)
+    {
+        String sample = "       The quick brown fox jumped over the lazy dog.         ";
+        
+        System.out.println(sample.trim());
+        
+        int position = sample.indexOf("quick");
+        System.out.println ("sample.indexOf(\"quick\") = " + position);
+        
 
-	}
+        String lowerCase = sample.toLowerCase();
+        System.out.println ("sample.toLowerCase() = " + lowerCase);
+        System.out.println ("After toLowerCase(), sample = " + sample);
+        int notFoundPsn = sample.indexOf("slow");
+        System.out.println("sample.indexOf(\"slow\") = " + notFoundPsn);
+        int newTest = sample.indexOf("quick", 13);
+        System.out.println(newTest);
+        int newTest2 = sample.indexOf("quick");
+        System.out.println(newTest2);
+    }
 
 }
